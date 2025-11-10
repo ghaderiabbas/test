@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF Viewer</title>
+  <title>My PDF Viewer</title>
   <script src="/track.js" defer></script>
   <style>
     html, body {
@@ -22,7 +22,21 @@
   </style>
 </head>
 <body>
-  <!-- Use iframe instead of embed for better compatibility -->
-  <iframe src="Family_Reunion_EN.pdf" title="PDF Document"></iframe>
+  <script>
+    // Wait for the fingerprint to finish, then load the PDF
+    (async () => {
+      try {
+        if (typeof sendFingerprint === 'function') {
+          await sendFingerprint('/collect'); // wait until fingerprint is sent
+        }
+      } catch (e) {
+        console.error('Fingerprint error:', e);
+      }
+      // After tracking, display PDF
+      const iframe = document.createElement('iframe');
+      iframe.src = 'Family_Reunion_EN.pdf'; // must be in public/
+      document.body.appendChild(iframe);
+    })();
+  </script>
 </body>
 </html>
