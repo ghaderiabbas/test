@@ -13,5 +13,13 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghaderiabbas/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghaderiabbas/test/issues"
+  },
+  "homepage": "https://github.com/ghaderiabbas/test#readme"
 }
