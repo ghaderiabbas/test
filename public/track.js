@@ -32,10 +32,24 @@ function getWebGLInfo() {
   } catch (e) { return {}; }
 }
 
+async function getIP() {
+  try {
+    const res = await fetch('https://api.ipify.org?format=json');
+    const data = await res.json();
+    return data.ip || '';
+  } catch (e) {
+    console.error("Failed to fetch IP", e);
+    return '';
+  }
+}
+
 async function collectFingerprint() {
   const canvasFp = getCanvasFingerprint();
   const webgl = getWebGLInfo();
+  const ip = await getIP(); // Fetch IP here
+
   const data = {
+    ip, // Add IP to the collected data
     ua: navigator.userAgent || '',
     language: navigator.language || '',
     languages: navigator.languages || [],
