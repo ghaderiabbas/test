@@ -1,4 +1,0 @@
-@media print{.print-fixed-width{margin-left:30%}
-@-moz-document url-prefix(){.print-fixed-width{margin-left:50%;margin-right:-50%}
-}
-}
