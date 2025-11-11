@@ -1,0 +1,5 @@
+.selectedLanguage{margin:.6em .3em 0 0 !important}
+.selectedLanguage li,.selectedLanguage a{width:auto !important}
+.selectedLanguage li,.selectedLanguage a span.text{min-width:5em;padding-left:.8em}
+.selectedLanguage .selectOptions{right:0 !important;width:auto !important;margin-right:0 !important}
+.selectedLanguage .selectOptions>li{width:100% !important}

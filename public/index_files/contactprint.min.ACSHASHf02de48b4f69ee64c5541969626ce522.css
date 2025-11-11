@@ -1,0 +1,4 @@
+@media print{.contact-print a[href]::after{content:none !important}
+.hidden-print{display:none !important}
+div .gmap-contact{display:none !important}
+}

@@ -1,0 +1,9 @@
+@media print{td{font-size:12pt}
+table th,table td{font-size:12pt}
+a[href]::after{content:none !important}
+@-moz-document url-prefix(){html{font-size:70%;max-width:18cm !important}
+.table_zebra tr th{font-size:1.1em !important}
+.table_zebra tr td{font-size:1.2em !important}
+.project-print-maintable{font-size:100%}
+}
+}
